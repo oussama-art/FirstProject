@@ -66,7 +66,7 @@ namespace FirstProject
             var product = await _productService.UpdatedProduct(id, updatedProduct);
             if (product == null)
             {
-                return NotFound("Produit n'existe pas");
+                return NotFound("Produit n'existe pas dans la base de donnees");
             }
             return product;
         }
